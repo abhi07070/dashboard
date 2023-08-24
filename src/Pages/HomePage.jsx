@@ -31,7 +31,7 @@ const HomePage = () => {
             type="number"
             value={searchId}
             onChange={(e) => handleSearch(e.target.value)}
-            placeholder="Enter Employee ID"
+            placeholder="Ex. 1001"
           />
         </label>
       </div>
