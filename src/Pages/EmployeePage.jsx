@@ -67,10 +67,10 @@ const EmployeePage = () => {
           <strong>Salary:</strong> {singleEmployeeData.salary} Lac
         </p>
         <div className="buttons">
-          <Link className="btn" to={"/"}>
+          <Link className="btn" to={"/dashboard"}>
             Back
           </Link>
-          <Link to={"/"} className="btn" onClick={handleDelete}>
+          <Link to={"/dashboard"} className="btn" onClick={handleDelete}>
             Delete
           </Link>
           <Link className="btn">Edit</Link>
