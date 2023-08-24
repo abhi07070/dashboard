@@ -31,7 +31,7 @@ const HomePage = () => {
             type="number"
             value={searchId}
             onChange={(e) => handleSearch(e.target.value)}
-            placeholder="Ex. 1001"
+            placeholder="Enter Employee ID"
           />
         </label>
       </div>
@@ -41,6 +41,7 @@ const HomePage = () => {
           <table className="table">
             <thead>
               <tr>
+                <th>Employee Id</th>
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Age</th>
@@ -51,6 +52,7 @@ const HomePage = () => {
             <tbody>
               {filteredEmployees.map((employee) => (
                 <tr key={employee.id}>
+                  <td data-label="Employee Id">{employee.id}</td>
                   <td data-label="First Name">{employee.firstName}</td>
                   <td data-label="Last Name">{employee.lastName}</td>
                   <td data-label="Age">{employee.age}</td>
